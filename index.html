@@ -3,9 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
   <title>Document</title>
 </head>
 <body>
+  <div id="container">
+    <img src="" id="gif">
+    <form>
+      <input type="text">
+      <button type="submit">Search</button>
+    </form>
+    <div id = "city-box">
+      <h1 id="city"></h1>
+    </div>
+    <div id = "data-box">
+      <div class="info" id="temp">
+        <h3>Current:</h3>
+        <div></div>
+      </div>
+      <div class="info" id="feels">
+        <h3>Feels Like:</h3>
+        <div></div>
+      </div>
+      <div class="info" id="desc">
+        <h3>Conditions:</h3>
+        <div></div>
+      </div>
+      <div class="info" id="hi">
+        <h3>High:</h3>
+        <div></div>
+      </div>
+      <div class="info" id="low">
+        <h3>Low:</h3>
+        <div></div>
+      </div>
+    </div>
+    <div id="switch-box">
+      <div>°F</div>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+      <div>°C</div>
+    </div>
+  </div>
   <script src="bundle.js"></script>
 </body>
 </html>
