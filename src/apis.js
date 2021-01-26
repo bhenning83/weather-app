@@ -1,7 +1,7 @@
 const getGif = async (desc) => {
   try {
     //calls api
-    let response = await fetch(`https://api.giphy.com/v1/gifs/translate?api_key=0rvzBeZcPTKU9FJMPRwEtqpzKYNPr4ZA&s=${desc}`, {mode: 'cors'})
+    let response = await fetch(`https://api.giphy.com/v1/gifs/translate?api_key=0rvzBeZcPTKU9FJMPRwEtqpzKYNPr4ZA&s=${desc}`)
     
     //converts to json data
     let json = await response.json();
@@ -19,7 +19,7 @@ const getData = async (city) => {
   let api = `http://${openWeatherAPI}${city}&units=imperial&appid=${openWeatherKey}`;
   try {
     //call api
-    let response = await fetch(api, { mode: 'cors' });
+    let response = await fetch(api);
 
     //convert resposne to json
     let obj = await response.json();
