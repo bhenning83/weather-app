@@ -16,7 +16,7 @@ const getGif = async (desc) => {
 const getData = async (city) => {
   const openWeatherKey = '480b9920e735a04affc24c731838e8fe';
   let openWeatherAPI = 'api.openweathermap.org/data/2.5/weather?q=';
-  let api = `http://${openWeatherAPI}${city}&units=imperial&appid=${openWeatherKey}`;
+  let api = `https://${openWeatherAPI}${city}&units=imperial&appid=${openWeatherKey}`;
   try {
     //call api
     let response = await fetch(api);
